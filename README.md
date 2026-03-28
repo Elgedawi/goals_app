@@ -1,17 +1,39 @@
-# notes_app
+# Notes App 📝
+A simple and efficient Flutter application for managing your daily notes and goals.
 
-A new Flutter project.
+## 🚀 Features
+- **Persistent Storage:** Uses [hive_ce](https://pub.dev/packages/hive_ce) to save your notes locally, so they stay even if you close the app.
+- **State Management:** Powered by [BLoC/Cubit](https://pub.dev/packages/flutter_bloc) for a clean and reactive UI.
+- **Smooth UI:** Modern design with customized text controllers and scroll behavior.
+- **CRUD Operations:** Create, Read, Update, and Delete notes easily.
 
-## Getting Started
+## 🛠️ Tech Stack
+- **Flutter** (Framework)
+- **Dart** (Language)
+- **hive_ce** (NoSQL Local Database)
+- **Flutter BLoC** (State Management)
 
-This project is a starting point for a Flutter application.
+## 📸 Screenshots
+<p align="center">
+  <img src="./screenshots\Screenshot_1774728899.png" width="300" />
+  <img src="./screenshots\Screenshot_1774728903.png" width="300" />
+</p>
+<p align="center">
+  <img src="./screenshots\Screenshot_1774728920.png" width="300" />
+  <img src="./screenshots\Screenshot_1774728922.png" width="300" />
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## ⚙️ How to run
+1. Clone the repository:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+    ''git clone https://github.com/Elgedawi/goals_app''
+    
+2.Install dependencies:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    ''flutter pub get''
+3.Run build_runner to generate Hive adapters:
+
+    ''dart run build_runner build''
+4.Run the app:
+
+    ''flutter run''
